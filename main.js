@@ -1,5 +1,5 @@
 const handleClick = (name) => {
-  location.href = `http://127.0.0.1:5500/YES_YOGA_PROJECT/YES%20YOGA%20PROJECT/${name}.html`;
+  location.href = `https://uvughn.github.io/${name}.html`;
 };
 
 const data = [
