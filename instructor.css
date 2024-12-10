@@ -1,0 +1,100 @@
+.instructors {
+  color: black !important;
+}
+
+.instructors h1 {
+  color: #9a95f5 !important;
+  text-align: center;
+}
+
+/* .cards {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  row-gap: 8em;
+  justify-content: center;
+  margin-bottom: 1.3em;
+} */
+
+.cards {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-auto-rows: auto;
+  grid-gap: 2em;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  min-width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 400px;
+  justify-content: space-between;
+  background-color: white;
+  text-align: center; /* Changed from justify to center */
+  word-spacing: -2px;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #9a95f5;
+}
+
+.card button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-image: linear-gradient(
+    to right,
+    #9a95f5 0%, /* Light lavender-blue (your title color) */
+    #6f72e3 51%, /* Deeper blue */
+    #9a95f5 100% /* Light lavender-blue again */
+  );
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+  background-size: 200% auto;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 75%;
+  box-shadow: 0 0 20px #eee;
+  text-align: center; /* Ensures button text is centered */
+}
+
+.card button:hover {
+  background-position: right center; /* Change the direction of the change here */
+  /* transform: scale(1.1); */
+  width: 100%;
+  cursor: pointer;
+}
+
+div.freeShippingRibbon {
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #ffffff 51%,
+    #fbc2eb 100%
+  );
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  white-space: nowrap;
+  border-radius: 2% 2% 2% 2%;
+  top: 0;
+}
