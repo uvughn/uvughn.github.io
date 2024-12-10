@@ -1,5 +1,5 @@
 const handleClick = (name) => {
-  location.href = `https://uvughn.github.io/${name}.html`;
+  location.href = `https://uvughn.github.io/availableInstructors.html`;
 };
 
 const data = [
